@@ -1,0 +1,35 @@
+body {
+  background-color: #202020;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h4, span, input, label {
+  color: #ffffff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=date] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+#button {
+  background-color: #ffffff;
+  color: #000000;
+}

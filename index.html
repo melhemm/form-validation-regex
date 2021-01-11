@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <title>Form Validation</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form id="form" class="form">
+
+      <div class="row">
+        <div class="six columns">
+          <label for="fullName">ФИО</label>
+          <input type="text" name="fullName" id="fullName" class="u-full-width" placeholder="Иванов Иван Иванович">
+          <span></span>
+        </div>
+
+        <div class="six columns">
+          <label for="passportNumber">Серия и номер паспорта</label>
+          <input type="text" name="passportNumber" id="passportNumber" class="u-full-width" placeholder="00 00 000000">
+          <span></span>
+        </div>
+      </div>
+
+      <div>
+        <label for="birthDate">Дата рождения</label>
+        <input type="date" id="date-of-birth" name="birthDate" class="u-full-width">
+        <span></span>
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <label for="selectList">Место рождения</label>
+          <select id="city" name="selectList" class="u-full-width">
+            <option value="0" disabled selected>Выбрать</option>
+            <option value="1">Москва</option>
+            <option value="2">Санкт-Петербург</option>
+          </select>
+          <span class="select-city-alert"></span>
+        </div>
+
+        <div class="six columns">
+          <label for="telephone">Номер телефон</label>
+          <input type="tel" name="telephone" id="phone" class="u-full-width" placeholder="+74957556983">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <label for="Email">Электронная почта</label>
+          <input type="email" name="email" id="email" class="u-full-width" placeholder="Принимает только gmail, hotmail, yahoo, yandex.com, yandex.ru, mail.ru">
+          <span></span>
+        </div>
+
+        <div class="six columns">
+          <label for="gender">Пол</label>
+          <span id="radio-alert"></span>
+          <div id="radio">
+            <span for="female"><input type="radio" name="gender" value="female" id="gender">Женский</span>
+            <span for="male"><input type="radio" name="gender" value="male" id="gender">Мужской</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <input type="checkbox" name="checkBox" id="checkbox">
+        <span for="checkbox" id="alert" class="label-body">я согласен на обработку персональных данных</span>
+      </div>
+      <div class="row">
+        <input type="submit" value="Сохранить" class="btn" id="button">
+      </div>
+      
+    </form>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
