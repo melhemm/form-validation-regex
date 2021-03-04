@@ -17,16 +17,24 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+
 }
 
 input[type=date] {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
+  color: #000000;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+  color: #000000;
 }
 
 #button {
